@@ -161,7 +161,7 @@ int main(int argc, char **argv) {
     u32 nsols, maxsols = min(MAXSOLS, eq.nsols);
     for (nsols = 0; nsols < maxsols; nsols++) {
       if (showsol) {
-        printf("\nSolution [%d]\n", PROOFSIZE);
+        printf("\nSolution");
         for (u32 i = 0; i < PROOFSIZE; i++)
           printf(" %jx", (uintmax_t)eq.sols[nsols][i]);
 
